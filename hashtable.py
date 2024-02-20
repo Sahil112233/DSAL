@@ -1,7 +1,3 @@
-# Consider telephone book database of N clients. Make use of a hash table implementation
-# to quickly look up client‘s telephone number. Make use of two collision handling
-# techniques and compare them using number of comparisons required to find a set of
-# telephone numbers
 
 def tele_database():
 	phone_data = []
@@ -9,7 +5,7 @@ def tele_database():
 	print("Enter Phone Numbers --\n")
 	for _ in range(n):
 		x = int(input("--> "))
-	phone_data.append(x)
+		phone_data.append(x)
 
 	return phone_data
 
@@ -49,14 +45,14 @@ for k in phone_database:
 		if opt == 1:
 			while hash_table[h_1] != -1:
 				h_1 += 1
-				hash_table[h_1] = k
+			hash_table[h_1] = k
 
 		elif opt == 2:
 			i = 0
 			while hash_table[h_1] != -1:
 				i += 1
 				h_1 = (h_1 + (i * h_2)) % m
-				hash_table[h_1] = k
+			hash_table[h_1] = k
 
 hashtable(hash_table)
 				
@@ -83,6 +79,3 @@ hashtable(hash_table)
 				
 				
 				
-hash_table[h_1] = k
-
-hashtable(hash_table)
