@@ -1,10 +1,4 @@
 
-/*
-Experiment 13 : Represent a given grapg using adjacency matrix/list to perform DFS and using adjacency list to perform BFS. 
-                Use the map of the area around the college as a graph. Identify the prominent land marks as nodes and perform DFS and BFS on that.
-Adjacency Matrix : using adj matrix -BFS(Que)
-*/
-
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
@@ -37,7 +31,7 @@ int m;
                      }
     
     //display function
-             cout << "The adjacency matrix of the graph is : " << endl;
+             cout << "The adjacency matrix of the graph is : " ;
                   for (i = 0; i < n; i++)
                     {
                         for (j = 0; j < n; j++)
@@ -53,7 +47,7 @@ void GT::bfs()
             cout << "Enter initial vertex : ";
             cin >> v;
             cout << "The BFS of the Graph is\n";
-            cout << v<<endl;
+            cout << v <<"-->";
             visited[v] = 1;
             k = 1;
             while (k < n)
@@ -77,7 +71,7 @@ void GT::dfs()
             cout <<endl<<"Enter initial vertex : ";
             cin >> v;
             cout << "The DFS of the Graph is\n";
-            cout << v<<endl;
+            cout <<v <<"-->";
             visited[v] = 1;
              k = 1;
             while (k < n)
@@ -106,9 +100,9 @@ GT gt;
     while(1)
     {
   
-        cout << "-----------------" << endl;
-        cout << "BFS & DFS representation" << endl;
-        cout << "-----------------" << endl;
+        cout << "\n-----------------" ;
+        cout << "\nBFS & DFS representation" ;
+        cout << "\n-----------------"<<endl;
         cout << "1.CREATE" << endl;
         cout << "2.BFS" << endl;
         cout << "3.DFS" << endl;
@@ -140,7 +134,6 @@ GT gt;
     
     
     
-
 
 
 
